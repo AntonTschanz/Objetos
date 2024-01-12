@@ -1,24 +1,23 @@
 package GestionAcademica;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Curso {	
 	private String titulo;
 	private String descripcion;
 	private String profesor;
-	private ArrayList<String> listaAlumnos = new ArrayList();
+	private ArrayList<Alumno> listaAlumnos = new ArrayList<>();
 	
-	public Curso() {
-		
-	}
-	
-//	public Curso(String titulo, String descripcion, String profesor, ArrayList<String> listaAlumnos) {
-//		this.titulo = titulo;
-//		this.descripcion = descripcion;
-//		this.profesor = profesor;
-//		this.listaAlumnos = listaAlumnos;
+//	public Curso() {
+//		
 //	}
+	
+	public Curso(String titulo, String descripcion, String profesor, ArrayList<Alumno> listaAlumnos) {
+		this.titulo = titulo;
+		this.descripcion = descripcion;
+		this.profesor = profesor;
+		this.listaAlumnos = listaAlumnos;
+	}
 
 	public String getTitulo() {
 		return titulo;
@@ -44,20 +43,18 @@ public class Curso {
 		this.profesor = profesor;
 	}
 
-	public ArrayList<String> getListaAlumnos() {
+	public ArrayList<Alumno> getListaAlumnos() {
 		return listaAlumnos;
 	}
 
-	public void setListaAlumnos(ArrayList<String> listaAlumnos) {
+	public void setListaAlumnos(ArrayList<Alumno> listaAlumnos) {
 		this.listaAlumnos = listaAlumnos;
 	}
+	
 
 	// Método
-	public void anyadirAlumno() {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Ingresa el alumno: ");
-		String alumno = sc.next();
-		this.listaAlumnos.add(alumno);
+	public void anyadirAlumno(Alumno a) {
+		this.getListaAlumnos().add(a);
 	}
 	
 	@Override
