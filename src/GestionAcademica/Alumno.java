@@ -37,7 +37,7 @@ public class Alumno {
 
 	@Override
 	public String toString() {
-		return "Alumno [nombre=" + nombre + ", edad=" + edad + ", curso=" + curso + "]";
+		return "El alumno llamado " + nombre + ", tiene " + edad + " años y pertenece al curso " + curso + ".";
 	}
 	
 }

@@ -59,8 +59,8 @@ public class Curso {
 	
 	@Override
 	public String toString() {
-		return "Curso [titulo=" + titulo + ", descripcion=" + descripcion + ", profesor=" + profesor + ", listaAlumnos="
-				+ listaAlumnos + "]";
+		return "Curso " + titulo + " es un " + descripcion + ", el profesor encargado es " +
+				profesor + " y los alumnos dentro de este curso son los siguientes: " + listaAlumnos + ".";
 	}
 	
 }
