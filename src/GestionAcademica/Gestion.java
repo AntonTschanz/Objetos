@@ -50,11 +50,21 @@ public class Gestion {
 	}
 
 	private static void Menu5(ArrayList<Alumno> listaAlumno, ArrayList<Curso> listaCurso) throws IOException {
-		BufferedWriter bw = new BufferedWriter(new FileWriter("src/GestionAcademica/data.txt", true));
-		bw.write(listaAlumno.toString());
-		bw.write(listaCurso.toString());
+		BufferedWriter bw = new BufferedWriter(new FileWriter("src/GestionAcademica/Alumno.txt", false));
+		BufferedWriter bw1 = new BufferedWriter(new FileWriter("src/GestionAcademica/Curso.txt", false));
+		
+		for(int i = 0; i < listaAlumno.size(); i++) {
+			bw.write(listaAlumno.get(i).getNombre() + "," + listaAlumno.get(i).getEdad() + "," + listaAlumno.get(i).getCurso() + "\n");
+		}
 		bw.flush();
 		bw.close();
+		
+		
+		for(int i = 0; i < listaCurso.size(); i++) {
+			bw1.write(listaCurso.get(i).getTitulo() + ";" + listaCurso.get(i).getDescripcion() + ";" + listaCurso.get(i).getProfesor() + ";" + listaAlumno.get(i).getNombre() + "\n");
+		}
+		bw1.flush();
+		bw1.close();
 	}
 
 	private static void Menu4(Scanner sc, ArrayList<Curso> listaCurso) {

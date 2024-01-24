@@ -57,10 +57,12 @@ public class Curso {
 		this.getListaAlumnos().add(a);
 	}
 	
+	
+	
 	@Override
 	public String toString() {
 		return "Curso " + titulo + " es un " + descripcion + ", el profesor encargado es " +
 				profesor + " y los alumnos dentro de este curso son los siguientes: " + listaAlumnos + ".";
 	}
-	
+
 }

@@ -1,1 +1,0 @@
-[El alumno llamado Anton, tiene 18 años y pertenece al curso Programacion.][Curso Programacion es un curso basico de java, el profesor encargado es Aitor y los alumnos dentro de este curso son los siguientes: [El alumno llamado Anton, tiene 18 años y pertenece al curso Programacion.].]
