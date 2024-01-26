@@ -1,3 +1,0 @@
-Anton,18,Program
-Ibai,18,Program
-Pablo,18,Arte
